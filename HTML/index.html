@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Kostenabschätzung</title>
-    
+    <title>Kostenabschätzung</title>   
     <link href="design.css"  rel="stylesheet">
 </head>
 
@@ -12,8 +11,23 @@
 <form action="kosten.php">
 	<label for="flaeche">Fläche je Stockwerk in qm:</label>
 	<input type="number" name="flaeche" id="flaeche">
+	</br>
 	<label for="hoehe">Stockwerkshöhe in m:</label>
+	<input type="number" name="hoehe" id="hoehe">
+	</br>
 	<label for="anzahl">Anzahl Stockwerke:</label>
+	<input type="number" name="anzahl" id="anzahl">
+	</br>
+	
+	<p>Baujahr des Sanierungsobjekts / letzte Sanierung</p> 
+	<fieldset> 
+		<input type="radio" id="1" name="jahr" value="1"> 
+		<label for="1">vor 1950</label><br> 
+		<input type="radio" id="2" name="jahr" value="2"> 
+		<label for="2">vor 1977</label><br> 
+		<input type="radio" id="3" name="jahr" value="3"> 
+		<label for="3">vor 1987</label> 
+	</fieldset>
 
 </form>
 
