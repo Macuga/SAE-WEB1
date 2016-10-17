@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<form action="kosten.php">
+<form id="form1" action="kosten.php" method="post">
 	<label for="flaeche">Fläche je Stockwerk in qm:</label>
 	<input type="number" name="flaeche" id="flaeche">
 	</br>
@@ -19,8 +19,8 @@
 	<input type="number" name="anzahl" id="anzahl">
 	</br>
 	
-	<p>Baujahr des Sanierungsobjekts / letzte Sanierung</p> 
 	<fieldset> 
+		<legend>Baujahr des Sanierungsobjekts / letzte Sanierung</legend>
 		<input type="radio" id="1" name="jahr" value="1" checked> 
 		<label for="1">vor 1950</label><br> 
 		<input type="radio" id="2" name="jahr" value="2"> 
@@ -36,6 +36,7 @@
 	</fieldset>
 
 	<button type="submit" name="action" value="0">Abesenden</button>
+	<button type="reset">Zurücksetzen</button>
 </form>
 
 </body>
