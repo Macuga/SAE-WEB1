@@ -10,7 +10,7 @@
 	echo "<br>\n";
 	
 	$file = fopen('daten.csv','w+');
-	fwrite($file, '"Fläche je Stockwerk in qm";"Stockwerkshöhe in m";"Anzahl Stockwerke";"Baujahr"' . "\n");
+	fwrite($file, '"Flaeche je Stockwerk in qm";"Stockwerkshoehe in m";"Anzahl Stockwerke";"Baujahr"' . "\n");
 	fwrite($file, '"' . $_GET['flaeche'] . '";"' . $_GET['hoehe'] . '";"' . $_GET['anzahl'] . '";"' . $_GET['jahr'] . '"');
 	fclose($file);
 ?>
